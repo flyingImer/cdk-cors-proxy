@@ -4,6 +4,7 @@
 !/.projen/deps.json
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
+!/.github/workflows/auto-approve.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -50,3 +51,7 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+**/*.bak
+example/**/*.js
+example/**/*.d.ts
+example/cdk.out
