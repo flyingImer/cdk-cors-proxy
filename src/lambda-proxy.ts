@@ -79,7 +79,7 @@ export class LambdaCorsProxy extends Construct {
     super(scope, id);
 
     this._lambdaFunction = new NodejsFunction(this, 'Handler', {
-      entry: path.join(__dirname, 'lambda/proxy.ts'),
+      entry: path.join(__dirname, 'lambda/proxy.js'),
       handler: 'handler',
       timeout: Duration.seconds(30),
       environment: {
